@@ -187,13 +187,10 @@ static av_cold int frei0r_init(AVFilterContext *ctx,
     int ret = 0;
     int i;
     static const char* const frei0r_pathlist[] = {
-        "/usr/local/ic-ffmpeg-3.2.42/lib/frei0r-1/"
-#if 0
         "/usr/local/lib/frei0r-1/",
         "/usr/lib/frei0r-1/",
         "/usr/local/lib64/frei0r-1/",
         "/usr/lib64/frei0r-1/"
-#endif
     };
 
     if (!dl_name) {

@@ -1,16 +1,3 @@
-# FFmpeg 3.2 with a Simple IRIS Connect Installation Patch
-
-The standard distribution can pick up Frei0r filters in `/usr/lib64/frei0r-1/`
-where `frei0r-plugins` places them so we have made a trivial patch to
-[vf_frei0r.c](https://github.com/iconnect/FFmpeg/commit/2bd92eed0e4cc57e148b1fe9b29e8637e358f75e)
-to ensure that the Frei0r filters are collected from `/usr/local/ic-ffmpeg-3.2.42/lib/frei0r-1/`.
-
-This is distributed/deployed through a snapshot tarball
-by the [ic-ffmpeg32](https://github.com/iconnect/poseidon/blob/master/doc/ic-ffmpeg32.md)
-Poseidon RPM package. See also [dockerfiles/ffmpeg](https://github.com/iconnect/dockerfiles/tree/master/ffmpeg)
-for the docker-ised package.
-
-
 FFmpeg README
 =============
 
